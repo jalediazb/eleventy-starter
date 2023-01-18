@@ -1,0 +1,10 @@
+{% if meta.env == 'prod' %}
+    <!-- INLINE CSS-->
+{% else %}
+    <style>
+        {% include "src/_includes/css/bulma.css" %}
+        {% include "src/_includes/css/style.css" %}
+    </style>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "eleventy-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "build": "cross-env ELEVENTY_ENV=prod eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalediazb/eleventy-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalediazb/eleventy-starter/issues"
+  },
+  "homepage": "https://github.com/jalediazb/eleventy-starter#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "clean-css": "^5.3.1",
+    "html-minifier": "^4.0.0",
+    "purgecss": "^5.0.0",
+    "terser": "^5.16.1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

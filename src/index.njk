@@ -1,0 +1,26 @@
+---
+title: "Inicio"
+layout: "page.njk"
+description: "Meta Descripcion"
+permalink:
+---
+
+
+<section class="section">
+    <div class="container">
+        <h1 class="title">Eleventy</h1>
+        <h2 class="subtitle">Starter Template</h2>
+    </div>
+</section>
+
+{% set js %}
+  {% include "./_includes/js/scripts.js" %}
+{% endset %}
+
+<script>
+    {% if  meta.env == 'prod'  %}
+        {{ js | jsmin | safe }}
+    {% else %}
+        {{ js | safe }}
+    {% endif %}
+</script>
